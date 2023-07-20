@@ -13,7 +13,8 @@ class Project extends Model
         "name",
         "agency",
         "decription",
-        "publish_date"
+        "publish_date",
+        "completed"
         ];
 
 }

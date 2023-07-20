@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('agency');
             $table->text('decription');
             $table->date('publish_date');
+            $table->boolean('completed') -> default(false);
 
             $table->timestamps();
         });
