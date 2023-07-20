@@ -14,7 +14,7 @@ class MainController extends Controller
     }
 
     public function show($id){
-        $projects = Project::findOrFail($id);
-        return view("dashboard");
+        $project = Project::findOrFail($id);
+        return view("dashboard",compact('project'));
     }
 }
