@@ -14,11 +14,13 @@
         </p>
 
         <div>
-            <ul class="d-flex flex-wrap justify-around">
+            <div class="d-flex flex-wrap">
                 @foreach ($projects as $project)
-                    <li>{{ $project['name'] }}</li>
+                    <div class="card m-2"> <a href="{{ route('dashboard') }}">{{ $project['name'] }}</a>
+                        <br>click o loggati per vedere i dettagli
+                    </div>
                 @endforeach
-            </ul>
+            </div>
         </div>
 
 
