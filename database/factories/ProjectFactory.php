@@ -17,10 +17,10 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake() -> name(),
+            'name' => fake() -> bothify('laravel-??#??###??-frepo'),
             'agency' => fake() -> company(),
             'decription' => fake() -> text(300),
-            'publish_date' => fake() -> date('Y_m_d'),
+            'publish_date' => fake() -> dateTimeThisDecade(),
             'completed' => fake() -> boolean()
         ];
     }
